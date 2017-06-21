@@ -1,0 +1,10 @@
+<div class="row">
+  <form #form="ngForm" novalidate>
+    <label>Email</label>
+    <input type="email" name="email" ngModel required>
+    <label>Password</label>
+    <input type="password" name="password" ngModel required>
+    <!--<button type="button" (click)="signup(form)">Create account</button>-->
+    <button type="button" (click)="login(form)">Login</button>
+  </form>
+</div>

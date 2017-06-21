@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Welcome to MobileMind</h1>
+  <span>a friendly tool</span>
+
+    <div *ngFor="let blog of blogs | async">
+      <span [innerHTML]="blog.title"></span>
+      <span [innerHTML]="blog.body"></span>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+
+  <form #form="ngForm" novalidate>
+    <label>Title</label>
+    <input type="text" name="title" ngModel required>
+    <label>Body</label>
+    <input type="text" name="body" ngModel required>
+    <!--<button type="button" (click)="signup(form)">Create account</button>-->
+    <button type="button" (click)="post(form)">Post</button>
+  </form>
